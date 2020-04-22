@@ -1,0 +1,45 @@
+<suite name = "ElmoTest Sanity">
+    <listeners>
+        <listener class-name="reportGenerator.TestListener"/>
+        <listener class-name="reportGenerator.AnnotationTransformer"/>
+    </listeners>
+    <test name = "Sanity Test">
+        <classes>
+            <class name = "EnesFramework.HeaderTest">
+                <methods>
+                    <exclude name = "EP_1002" />
+                    <exclude name = "EP_1003" />
+                    <exclude name = "EP_1004" />
+                    <exclude name = "EP_1005" />
+                    <exclude name = "EP_1006" />
+                </methods>
+            </class>
+            <class name = "EnesFramework.SignInTest"></class>
+        </classes>
+    </test>
+</suite>
+
+        <!-- Exclude helps you to define the tests that shouldn't run in that class.(Interview Question)
+
+        1st Way To Do IT: This will not run the tests in exclude tag.
+
+        <class name = "EnesFramework.HeaderTest">
+                <methods>
+                    <exclude name = "EP_1003" />
+                    <exclude name = "EP_1006" />
+                </methods>
+            </class>
+
+        2nd Way To Do IT: This will run all the tests in that class.
+
+        <class name="EnesFramework.SignInTest"/>
+
+        3rd Way To Do IT: Include will run your test, exclude wont run it
+
+        <class name = "EnesFramework.SearchTest">
+                <methods>
+                    <include name = "ST_1000" />
+                    <exclude name = "ST_1001" />
+                </methods>
+            </class>
+        -->

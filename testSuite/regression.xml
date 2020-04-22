@@ -1,0 +1,23 @@
+<suite name = "ElmoTest Regression">
+    <listeners>
+        <listener class-name="reportGenerator.TestListener"/>
+        <listener class-name="reportGenerator.AnnotationTransformer"/>
+    </listeners>
+    <test name = "Regression Test">
+        <classes>
+            <class name = "EnesFramework.HeaderTest">
+                <methods>
+                    <exclude name = "EP_1003" />
+                    <exclude name = "EP_1006" />
+                </methods>
+            </class>
+            <class name="EnesFramework.SignInTest"/>
+            <class name = "EnesFramework.SearchTest">
+                <methods>
+                    <include name = "ST_1000" />
+                    <exclude name = "ST_1001" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

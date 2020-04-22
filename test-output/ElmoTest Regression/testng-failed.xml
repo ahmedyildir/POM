@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ElmoTest Regression]">
+  <listeners>
+    <listener class-name="reportGenerator.TestListener"/>
+    <listener class-name="reportGenerator.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="EnesFramework.HeaderTest">
+        <methods>
+          <include name="startTest"/>
+          <include name="EP_1002"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- EnesFramework.HeaderTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [ElmoTest Regression] -->

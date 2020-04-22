@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstTest",
+            "request": "launch",
+            "mainClass": "EnesFramework.FirstTest",
+            "projectName": "EnesPOM"
+        }
+    ]
+}
